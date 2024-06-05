@@ -1,0 +1,158 @@
+<nav
+  class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+  data-bs-theme="dark"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/home']">Cars Factory</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" [routerLink]="['/home']"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/store">Stores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/model">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" [routerLink]="['/about-us']"
+            >About Us</a
+          >
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Cars
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/model">Bmw</a></li>
+            <li><a class="dropdown-item" href="/model">Elentra</a></li>
+            <li><a class="dropdown-item" href="/model">Lancer</a></li>
+            <!-- <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/sign-in">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/login">Login</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </form>
+    </div>
+  </div>
+</nav>
+
+<section class="mission">
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="mission-content">
+      <h1 class="text-center"><strong>About Us </strong></h1>
+      <p class="text-center">
+        Discover who we are, what we do, and why we do it. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Temporibus ipsam voluptatibus
+        mollitia autem necessitatibus in deleniti ab nostrum! Quas, minus
+        pariatur rem odio praesentium perferendis explicabo laborum voluptatum
+        non nihil!,Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Temporibus ipsam voluptatibus mollitia autem necessitatibus in deleniti
+        ab nostrum! Quas, minus pariatur rem odio praesentium perferendis
+        explicabo laborum voluptatum non nihil!,Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Temporibus ipsam voluptatibus mollitia
+        autem necessitatibus in deleniti ab nostrum! Quas, minus pariatur rem
+        odio praesentium perferendis explicabo laborum voluptatum non nihil!
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <h1 class="display-4"><strong>Our Mission</strong></h1>
+        <p class="lead">
+          Originally conceived as a personal blog and website, Alvarotrigo.com
+          (AT) has evolved into a robust platform with a broader mission. Our
+          primary goal now is to curate a wealth of valuable information to help
+          individuals all around the globe.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer" style="padding: 5%; margin: 2% 0">
+    <div
+      class="row d-flex justify-content-center align-items-center"
+      style="margin: 1% 0"
+    >
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="margin: 0 2%"
+      >
+        <div
+          class="d-flex justify-content-center align-items-center"
+          style="margin: 0 2%"
+        >
+          <a href="#" style="margin: 0 20% 15%"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="#" style="margin: 0 20% 15%"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="#" style="margin: 0 20% 15%"
+            ><i class="fa fa-youtube"></i
+          ></a>
+          <a href="#" style="margin: 0 20% 15%"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+      <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Career</a></li>
+      </ul>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+      INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By:
+      Mahesh
+    </div>
+  </div>
+</footer>

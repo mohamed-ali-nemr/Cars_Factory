@@ -1,0 +1,55 @@
+<div class="login-container" style="margin-top: 100px">
+  <div class="login-box">
+    <h2>Login</h2>
+    <p class="register-link">welcome</p>
+
+    <form [formGroup]="form" style="margin-top: 1rem">
+      <!-- pipe -->
+      <p class="register-link">{{ message | lowercase }}</p>
+
+      <!-- mail -->
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="mail" />
+      </div>
+
+      <!-- validator email-->
+      <div
+        *ngIf="f['mail'].touched && f['mail'].invalid"
+        style="color: red"
+        class="msgerror"
+      >
+        <div *ngIf="f['mail'].errors && f['mail'].errors['required']">
+          * Email is required.
+        </div>
+        <div *ngIf="f['mail'].errors && f['mail'].errors['email']">
+          Invalid Email.
+        </div>
+      </div>
+
+      <!-- pass -->
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" formControlName="pass" />
+      </div>
+
+      <!-- validator password -->
+      <div
+        *ngIf="f['pass'].touched && f['pass'].invalid"
+        style="color: red"
+        class="msgerror"
+      >
+        <div *ngIf="f['pass'].errors && f['pass'].errors['required']">
+          Password is required.
+        </div>
+      </div>
+
+      <button type="submit" (click)="submithandelr()" class="login-button">
+        Login
+      </button>
+      <p class="register-link">
+        Don't have an account? <a routerLink="/sign-in">Sign Up</a>
+      </p>
+    </form>
+  </div>
+</div>
